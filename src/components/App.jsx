@@ -3,6 +3,7 @@ import { QuizList } from "./QuizList/QuizList";
 import initialQuizItems from "../data.json"
 import { SearchBar } from "./SearchBar/SearchBar";
 import { QuizForm } from "./QuizForm/QuizForm";
+import { Counter } from "./Counter/Counter";
 
 
 export class App extends Component {
@@ -55,7 +56,12 @@ export class App extends Component {
     <QuizList 
     items = {visibleItems}
     onDelete = {this.deleteQuizItem} />
+
+
+
+<Counter/>
     </div>
+   
   }
 
 };
