@@ -63,10 +63,6 @@ this.setState(prevState => ({
     <QuizList 
     items = {visibleItems}
     onDelete = {this.deleteQuizItem} />
-
-
-
-<Counter/>
     </div>
    
   }
