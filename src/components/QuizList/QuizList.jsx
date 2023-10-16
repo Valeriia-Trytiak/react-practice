@@ -1,12 +1,13 @@
 import { QuizCard } from "components/QuizCard/QuizCard"
+import { List, ListItem } from "./QuizList.styled"
 
 export const QuizList = ({ items, onDelete }) => {
-    return <ul>{items.map(item =>
-        <li key={item.id}>
+    return <List>{items.map(item =>
+        <ListItem key={item.id}>
             <QuizCard quiz={item} onDelete={onDelete}/>
-        </li> 
+        </ListItem> 
         )}
 
-        </ul>}
+        </List>}
 
     
